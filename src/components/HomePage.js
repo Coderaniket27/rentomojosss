@@ -52,7 +52,7 @@ export default function HomePage() {
     } else {
       setApiData(fullData);
     }
-  }, [searched]);
+  },[searched,fullData]);
 
   const handleSearch = (e) => {
     const { name, value } = e.target;
@@ -69,7 +69,7 @@ export default function HomePage() {
     //         return item.name
     //           .toLowerCase()
     //           .includes(value.toLowerCase());
-    //         });
+    //         })
     //     let companyies = fullData.filter((item) => {
 
     //         return item.company.name
@@ -78,7 +78,7 @@ export default function HomePage() {
     //     });
     //     return names.filter((item) => companyies.includes(item));
     //   };
-    //   setApiData(newData());
+    //   setApiData(newData())
     // } else {
     //   setApiData(fullData);
     // }
