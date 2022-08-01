@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
-  const columns = ["Name of Person", "Company Name", "Post Link"];
+  const columns = ["Name of Persons", "Company Name", "Post Link"];
 
   const [loading, setLoading] = useState(true);
   const [apiData, setApiData] = useState([]);
@@ -85,7 +85,7 @@ export default function HomePage() {
   };
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <h1>Loading......</h1>;
   }
 
   return (
